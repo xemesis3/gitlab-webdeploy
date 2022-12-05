@@ -7,5 +7,9 @@ sudo yum install docker-ce -y
 sudo systemctl start docker
 sudo systemctl status docker
 sudo systemctl enable docker
-sudo docker pull chynr/deeznuts:latest
-sudo docker run -itd --name webserver -p 8080:80 deeznuts:latest
+sudo docker pull chynr/rally:latest
+sleep 3
+sudo docker run -it --name webserverRally -p 80:80 rally:latest
+sleep 5
+service apache2 start
+exit
