@@ -8,7 +8,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo docker pull chynr/rally:latest
 sleep 3
-sudo docker run -it --name webserverRally -p 80:80 rally:latest
+sudo docker run -it --name webserverRally -p 80:80 chynr/rally:latest
 sleep 5
 service apache2 start
 exit
