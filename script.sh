@@ -9,6 +9,6 @@ sudo systemctl enable docker
 sudo docker pull chynr/heat:latest
 sleep 3
 sudo docker run -d --name webserverHeat --restart unless-stopped -p 80:80 chynr/heat:latest
-sudo docker exec webserverHeat /bin/bash -c "systemctl enable apache2"&&a"systemctl start apache2"
+sudo docker exec webserverHeat /bin/bash -c "systemctl enable apache2"&&"systemctl start apache2"
 sudo echo "Done!!"
 
