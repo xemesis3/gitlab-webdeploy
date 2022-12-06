@@ -1,4 +1,4 @@
-#!/usr/bin/sudo bash
+#!/bin/sh
 sudo yum update -y
 sudo yum install vim -y
 sudo yum install git -y
