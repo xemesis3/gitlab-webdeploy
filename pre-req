@@ -1,0 +1,7 @@
+#Setting up Gitlab
+sudo curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/rpm/gitlab-runner_amd64.rpm"
+sudo rpm -i gitlab-runner_amd64.rpm
+
+# sudo gitlab-runner register
+# https://gitlab.com/
+# GR1348941c5861G5Hp2FgEisyBxC4
