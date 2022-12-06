@@ -1,4 +1,7 @@
 #Setting up Gitlab
+sudo yum update -y
+sudo yum upgrade -y
+sudo yum install git -y
 sudo curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/rpm/gitlab-runner_amd64.rpm"
 sudo rpm -i gitlab-runner_amd64.rpm
 
