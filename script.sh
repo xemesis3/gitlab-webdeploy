@@ -6,9 +6,8 @@ sudo yum install docker -y
 sleep 5
 sudo systemctl start docker
 sudo systemctl enable docker
-sudo docker pull chynr/rally:latest
+sudo docker pull chynr/heat:latest
 sleep 3
-sudo docker run -it --name webserverRally -p 80:80 chynr/rally:v1
-sleep 5
-service apache2 start
-exit
+sudo docker run -it --name webserverHeat -p 80:80 chynr/heat:latest
+sudo docker exec heat /bin/bash -c "systemctl enable apache2";"systemctl start apache2"
+sudo echo "Done!!"
